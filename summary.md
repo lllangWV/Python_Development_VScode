@@ -1,0 +1,5 @@
+# Summary
+
+This webinar is for beginners and intermediate python user.
+
+The webinar, titled "Python Development with Visual Studio Code" is designed to equip participants with the fundamentals of Python programming within the VSCode IDE. It covers setting up the Python environment, exploring VSCode's powerful editing, running, and debugging features, and integrating with Git for version control. Participants will also learn about useful extensions to enhance their development workflow. The session includes a practical demonstration of building a simple Python project, offering a hands-on experience with the tools and features discussed. The webinar aims to provide a solid foundation for developing Python applications efficiently using VSCode, catering to both beginners and intermediate users.
