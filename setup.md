@@ -1,9 +1,80 @@
-# Setting Up Your Python Development Environment with VS Code
 
-In this guide, we'll walk you through the process of setting up a Python development environment using Visual Studio Code (VS Code), which is a popular and feature-rich code editor. Whether you're new to programming or an experienced developer, these steps will help you get started on your Python projects with ease.
+# Setting up VS Code for python development
 
-## Step 1: Downloading and Installing Python
+## Installing VSCode
 
+Visual Studio Code is a free, open-source editor that supports a wide range of programming languages and frameworks. To download and install it, follow these steps:
+
+1. Go to the [Visual Studio Code official website](https://code.visualstudio.com/).
+2. Click on the download button for your operating system (Windows, macOS, or Linux).
+3. Once the download is complete, run the installer and follow the on-screen instructions to install VS Code.
+## Installing Git
+
+Git is a powerful version control system widely used for software development and other version control tasks. Here's a concise guide to installing Git on Windows, macOS, and Linux systems.
+
+## Windows
+
+1. **Download the Installer**: Visit the [Git website](https://git-scm.com/) and download the latest version of Git for Windows. The download should automatically suggest the best version for you.
+
+2. **Run the Installer**: Open the downloaded `.exe` file and follow the installation prompts. Default settings are typically sufficient for most users, but you can customize the installation options according to your needs.
+
+3. **Verify Installation**: Open the Command Prompt or Git Bash (installed with Git) and type `git --version` to check if Git was installed successfully.
+
+## macOS
+
+### Homebrew
+
+If you have Homebrew installed, you can install Git by opening a terminal and running:
+
+```bash
+brew install git
+```
+
+### Installer
+
+1. **Download the Installer**: Visit the [Git website](https://git-scm.com/download/mac) and download the latest version of Git for macOS.
+
+2. **Run the Installer**: Open the downloaded `.dmg` file, and follow the installation prompts to install Git.
+
+3. **Verify Installation**: Open the Terminal and type `git --version` to ensure Git is installed correctly.
+
+## Linux
+
+### Debian/Ubuntu
+
+Open a terminal and run:
+
+```bash
+sudo apt-get update
+sudo apt-get install git
+```
+
+
+```
+
+## Verify Installation
+
+Regardless of your operating system, you can verify the installation by opening a terminal (or Command Prompt on Windows) and running:
+
+```bash
+git --version
+```
+
+This command should return the installed version of Git, confirming it was successfully installed.
+
+## Configuring Git
+
+After installing, it's a good practice to set up your user name and email address since Git uses these details in your commit transactions. Open a terminal or Command Prompt and run the following commands, replacing the placeholders with your information:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+```
+
+You're now ready to start using Git for your version control needs.
+
+
+## Downloading and Installing Python
 
 ### Through python.org
 To download and install Python, follow these steps:
@@ -46,15 +117,9 @@ With Anaconda installed, you can create isolated Python environments to manage d
 
 ### Managing Python Environments with Conda
 
-## Step 1: Downloading and Installing Visual Studio Code
 
-Visual Studio Code is a free, open-source editor that supports a wide range of programming languages and frameworks. To download and install it, follow these steps:
 
-1. Go to the [Visual Studio Code official website](https://code.visualstudio.com/).
-2. Click on the download button for your operating system (Windows, macOS, or Linux).
-3. Once the download is complete, run the installer and follow the on-screen instructions to install VS Code.
-
-## Step 2: Installing the Python Extension for VS Code
+## Installing the Python Extension for VS Code
 
 VS Code has an extensive library of extensions that enhance its functionality. For Python development, you'll need to install the official Python extension.
 
@@ -63,54 +128,4 @@ VS Code has an extensive library of extensions that enhance its functionality. F
 3. Search for 'Python' in the Extensions view search bar.
 4. Find the Python extension authored by Microsoft (usually the first result) and click on the Install button.
 
-## Step 3: Setting Up a Virtual Environment
 
-A virtual environment is an isolated Python environment that allows you to manage dependencies for different projects separately. To create a virtual environment, follow these steps:
-
-1. Open VS Code's integrated terminal by going to `View > Terminal` or by using the `` Ctrl+` `` keyboard shortcut.
-2. Navigate to your project's directory using the `cd` command.
-3. Once in the project directory, run the following command to create a virtual environment:
-   ```bash
-   python -m venv venv
-   ```
-1. To activate the virtual environment, use the appropriate command for your operating system:
-- On Windows, run:
-
-    ```cmd
-    .venv\Scripts\activate
-    ```
-
-- On macOS and Linux, run:
-
-    ```cmd
-    source .venv/bin/activate
-    ```
-
-You should now see the name of the virtual environment prefixed to your shell prompt, indicating that the virtual environment is active. With your environment set up, you're ready to install packages using pip and start coding in Python!
-
-Remember, every time you start a new terminal session, you'll need to reactivate your virtual environment with the activation command.
-
-## Recommended VS Code Extensions for Python and Data Science Development
-
-Visual Studio Code, popularly known as VS Code, is a highly versatile Integrated Development Environment (IDE) that supports a multitude of programming languages and tools. One of the key features that make VS Code so powerful is its extensibility through extensions.
-
-Extensions are add-ons that you can easily install to augment and customize your coding environment. They provide additional functionality to the base software, ranging from simple color themes and icon packs that make your workspace more visually appealing, to more sophisticated tools that can improve productivity, such as intelligent code completion, advanced debugging, and support for additional file formats.
-
-The right set of extensions can streamline your workflow, aid in code quality control, and even help you learn new programming concepts and languages. Below is a curated list of recommended extensions that enhance your coding experience, particularly in the realms of Python development and data science.
-
-- **Pylance**: Rich language support with auto-imports and type information.
-- **Python**: Essential features like linting, debugging, and code navigation.
-- **One Dark Pro**: A comfortable dark theme for extended coding sessions.
-- **Material Icon Theme**: Adds a rich set of icons to improve the visual grepping of your projects.
-- **Markdown Preview Enhanced**: A powerful markdown extension with preview features.
-- **Jupyter**: Support for Jupyter Notebooks within VS Code.
-- **Jupyter Cell Tags**: Add tags to Jupyter Notebook cells for easy categorization and navigation.
-- **Jupyter Keymap**: Familiar Jupyter keyboard shortcuts in VS Code.
-- **Jupyter Notebook Renderers**: Additional renderers for Jupyter notebook cell outputs.
-- **Jupyter Slideshow**: Create and display Jupyter Notebook slideshows within VS Code.
-- **autoDocstring**: Generate Python docstrings automatically.
-- **Excel Viewer**: View Excel spreadsheets and CSV files within VS Code.
-- **HTML CSS Support**: Autocomplete for HTML classes and IDs defined in your stylesheets.
-- **R Debugger**: A comprehensive debugger for the R programming language.
-- **Rainbow CSV**: Highlight CSV and TSV files in different colors for easier editing and visualization.
-- **vscode-pdf**: View PDF files directly in VS Code.
