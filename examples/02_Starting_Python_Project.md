@@ -102,6 +102,10 @@ Pylance gives the following features
 #### Linting example:
 
 
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/81367ed2-67c1-4b04-a33c-922f7616768d
+
+
+
 <video width="800" height="400" controls autoplay muted>
   <source src="https://github.com/lllangWV/Python_Development_VScode/blob/main/videos/python_linting_video.mp4" type="video/mp4">
 </video>
