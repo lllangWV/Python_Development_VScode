@@ -1,15 +1,35 @@
 
 # Project in VS Code
 
-We will be going over a demonstration of a Python Project in VScode. Throughout this demonstration I will be showing off the features be nice to have when developing
-
-## 1. Opening and Creating a New Folder for the Python Project
+We will be going over a demonstration of a Python Project in VScode. To start, lets create a new folder and open it in VS Code
 
 - **Step 1:** Open VS Code.
 - **Step 2:** Go to `File` > `Add Folder to Workspace...` and create a new folder named `vscode_demo`.
 - **Step 3:** Open the new folder in VS Code to start your project.
 
-*Insert image here showing the folder creation process*
+## 1.Installing Python Extensions
+
+To effectively interface Python with Visual Studio Code (VS Code), installing certain extensions is essential. These extensions enhance the development experience by providing advanced coding support, debugging capabilities, code formatting, and more. Below is a list of recommended extensions for Python development in VS Code:
+
+- **Python**: The main extension for Python development in VS Code, offering comprehensive support for Python, including IntelliSense (powered by Pylance for enhanced coding assistance), linting, debugging, code navigation, formatting, refactoring, and more. This extension supports all actively maintained versions of Python (>=3.7) and enhances your coding experience whether you're working on simple scripts or complex projects. It also includes support for Jupyter Notebooks, test exploration, and environment management, ensuring a versatile development environment.
+
+- **Pylance**: An optional yet highly recommended extension that works alongside the Python extension to provide fast, feature-rich language support. Utilizing Microsoft's Pyright, Pylance supercharges IntelliSense with advanced type information, helping you write more accurate code quickly. It also offers syntax highlighting, code navigation, and type checking, making it a valuable tool for Python developers seeking an improved coding experience.
+
+- **Python Debugger**: Integrated into the Python extension, this tool allows for easy debugging of Python scripts, web apps, remote processes, and multi-threaded programs directly within VS Code. It supports step-through debugging, breakpoints, variable inspection, and more, making it easier to identify and fix issues in your code.
+
+- **autopep8**: A formatting extension that automatically adjusts your Python code to conform to the PEP 8 style guide. With autopep8, you can ensure your code is not only functional but also clean and consistent with Python's coding standards. This extension can be invoked to format a file or an entire project, helping to maintain a professional codebase.
+
+Each of these extensions plays a vital role in streamlining the Python development process in VS Code, from writing and debugging code to ensuring it adheres to best practices. By installing these extensions, you'll equip yourself with a powerful set of tools designed to enhance productivity and code quality.
+
+Sometimes you need to reload the window for the changes to take effect. To do `Ctrl+Shift+P`, then type in `Reload Window` and select the option `Developer: Reload Window`
+
+**Installed Extensions in the Extensions Tab**
+
+<p align="center">
+  <img src="/images/python_extensions.PNG" alt="Extensions Init screen" style="width: 100%;"/>
+</p>
+
+
 
 ## 2. Test if you can run python. Create a Simple `test.py` Script and Running It
 
@@ -26,8 +46,17 @@ Let's see if we can run a basic python script!
   <img src="/images/test_script.PNG" alt="Extensions Init screen" style="width: 100%;"/>
 </p>
 
+If everything installed correctly, the terminal will pop up and you should see:
 
-## 3. Create a Python Virtual Environment
+<p align="center">
+  <img src="/images/test_1.PNG" alt="Test" style="width: 100%;"/>
+</p>
+
+
+
+## 3. Environment Management
+
+### Creating a python virtual environment
 
 Creating Python virtual environments for projects is crucial as it allows developers to manage dependencies and Python versions on a per-project basis. By isolating the project's environment, you ensure that each project has access to only the packages it needs, avoiding conflicts between package versions across different projects. This isolation enhances reproducibility, making it easier to share projects with others without worrying about mismatched dependencies. Furthermore, virtual environments facilitate smoother project setup and migration across different machines and platforms. By incorporating virtual environments into your workflow, you significantly improve project manageability and reduce the risk of issues related to package dependencies.
 
@@ -47,13 +76,13 @@ This will create a folder that will keep installed packages and the isolated pyt
   <img src="/images/virtual_environment_1.PNG" alt="Selecting default interpreter 1" style="width: 100%;"/>
 </p>
 
-
 **Selecting default interpreter**
 <p align="center">
   <img src="/images/virtual_environment_2.PNG" alt="Selecting default interpreter 2" style="width: 100%;"/>
 </p>
 
-## 4. Activate Virtual Environment and Install Libraries
+### Activate Virtual Environment and Install Libraries
+For python environments, we must activate them and install the necessary packages
 
 - **Step 1:** In the terminal, activate the virtual environment:
   - On Windows: `.venv\Scripts\activate`
@@ -69,66 +98,34 @@ This will create a folder that will keep installed packages and the isolated pyt
 </p>
 
 
-## 5. basic Python Extensions (Pylance, Python, Python Debuugger)
+## 4. Editing Code
 
-- Install essential Python extensions like Pylance, Python, and Python debugging by searching for them in the Extensions view (`Ctrl+Shift+X`) and clicking `Install`.
-
-**Activate Virutal Environment**
-<p align="center">
-  <img src="/images/basic_python_extensions.PNG" alt="Selecting default interpreter 2" style="width: 100%;"/>
-</p>
-
-Sometimes you need to reload the window for the changes to take effect. To do `Ctrl+Shift+P`, then type in `Reload Window` and select the option `Developer: Reload Window`
+In this section, We be going over some editing features.
 
 
-### 1. Python
-
-Python extension gives the following features
-Pylance gives the following features
-- **IntelliSense (Pylance)**
-- **linting**
-- **debugging (Python Debugger)**
-- **code navigation**
-- **variable explorer**
-- **refactoring**
-- **Code outline**
-
-**Python extension page**
-
-<p align="center">
-  <img src="/images/python_extension.PNG" alt="Python extension" style="width: 100%;"/>
-</p>
-
-#### Linting example:
+### Autocomplete and IntelliSense
+IntelliSense is a general term for code editing features that relate to code completion. 
 
 
-<video width="800" height="400" controls autoplay muted>
-  <source src="/videos/python_linting_video.mp4" type="video/mp4">
-</video>
 
-### 2. Pylance
+##### 1. Linting example 
+- **Step 1:** Create a new file called `linting.py`
+- **Step 2:** Copy and paste the following into the file
+```python
+def greet(names):
+    for name in names
+    print "Hello, " + name + "!"
 
-Pylance gives the following features
-- **Docstrings**
-- **Signature help, with type information**
-- **Parameter suggestions**
-- **Code completion**
-- **Auto-imports (as well as add and remove import code actions)**
-- **As-you-type reporting of code errors and warnings (diagnostics)**
-- **Code outline**
-- **Code navigation**
-- **Type checking mode**
-- **Native multi-root workspace support**
-- **IntelliCode compatibility**
-- **Jupyter Notebooks compatibility**
-- **Semantic highlighting**
+```
 
 
-**Pylance extension page**
+#### 3. Python Debugger
 
-<p align="center">
-  <img src="/images/pylance.PNG" alt="Pylance Extension" style="width: 100%;"/>
-</p>
+Python Debugger is Visual Studio Code extension that supports Python debugging with debugpy. Python Debugger provides a seamless debugging experience by allowing you to set breakpoints, step through code, inspect variables, and perform other essential debugging tasks. The debugy extension offers debugging support for various types of Python applications including scripts, web applications, remote processes, and multi-threaded processes.
+
+
+
+
 
 
 ## 6. A More Complicated Python File
