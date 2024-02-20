@@ -103,7 +103,7 @@ Pylance gives the following features
 
 
 <video width="800" height="400" controls autoplay muted>
-  <source src="/videos/python_linting_video.mp4" type="video/mp4">
+  <source src="https://github.com/lllangWV/Python_Development_VScode/blob/main/videos/python_linting_video.mp4" type="video/mp4">
 </video>
 
 ### 2. Pylance
