@@ -119,7 +119,10 @@ def greet(names):
 ```
 
 
-#### 3. Python Debugger
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/81367ed2-67c1-4b04-a33c-922f7616768d
+
+
+
 
 Python Debugger is Visual Studio Code extension that supports Python debugging with debugpy. Python Debugger provides a seamless debugging experience by allowing you to set breakpoints, step through code, inspect variables, and perform other essential debugging tasks. The debugy extension offers debugging support for various types of Python applications including scripts, web applications, remote processes, and multi-threaded processes.
 
