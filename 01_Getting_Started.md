@@ -13,8 +13,6 @@ Upon launching VS Code, you're greeted with a welcoming interface designed for e
 
 ### File Explorer Tab
 
-
-
 The File Explorer is where all your project files and folders are displayed. It's the heart of your workspace, allowing you to navigate, create, delete, and organize your files effortlessly.
 
 - **To access the File Explorer,** click on the first icon on the sidebar on the left-hand side that looks like two stacked documents.

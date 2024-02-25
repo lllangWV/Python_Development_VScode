@@ -60,7 +60,7 @@ If everything installed correctly, the terminal will pop up and you should see:
 
 Creating Python virtual environments for projects is crucial as it allows developers to manage dependencies and Python versions on a per-project basis. By isolating the project's environment, you ensure that each project has access to only the packages it needs, avoiding conflicts between package versions across different projects. This isolation enhances reproducibility, making it easier to share projects with others without worrying about mismatched dependencies. Furthermore, virtual environments facilitate smoother project setup and migration across different machines and platforms. By incorporating virtual environments into your workflow, you significantly improve project manageability and reduce the risk of issues related to package dependencies.
 
-- **Step 1:** Open the integrated terminal (`Ctrl+``).
+- **Step 1:** Open the integrated terminal **Ctrl+`**.
 - **Step 2:** Run `python -m venv .venv` to create a virtual environment named `.venv`.
 This will create a folder that will keep installed packages and the isolated python interpreter
 - **Step 3:** We need to make sure VScode is using this interpreter as the default for this project. We can do this by clicking the button in the bottom right corner next the the notification. 
@@ -96,6 +96,10 @@ For python environments, we must activate them and install the necessary package
 <p align="center">
   <img src="/images/virtual_environment_activate.PNG" alt="Selecting default interpreter 2" style="width: 100%;"/>
 </p>
+
+### Final Thoughts
+
+- Conda environments will also automatically be detected
 
 
 ## 4. Editing Code
