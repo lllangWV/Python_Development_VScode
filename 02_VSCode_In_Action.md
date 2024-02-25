@@ -135,6 +135,41 @@ While editing, you can right-click different identifiers to take advantage of se
 
 ##### Add video of go to definition
 
+**Starting code**
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.signal import savgol_filter
+
+# Generate a sine wave
+x = np.linspace(0, 10, 100)
+y = np.sin(x)
+
+# Introduce some noise
+noise = np.random.normal(0, 0.1, y.shape)
+noisy_signal = y + noise
+
+# Attempt to smooth the noisy signal
+# Intentional mistake: window length is even; it should be odd
+window_length = 24  # This should be an odd number
+polynomial_order = 3
+try:
+    smoothed_signal = savgol_filter(noisy_signal, window_length, polynomial_order)
+except ValueError as e:
+    print(f"Error encountered: {e}")
+    # Placeholder for corrected window_length, for demonstration
+    window_length = 25
+    smoothed_signal = savgol_filter(noisy_signal, window_length, polynomial_order)
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.plot(x, y, label='Original Sine Wave')
+plt.plot(x, noisy_signal, label='Noisy Signal')
+plt.plot(x, smoothed_signal, label='Filtered Signal')
+plt.legend()
+plt.show()
+```
+
 ### Refactoring 
 The Python extension adds the following refactoring functionalities: Extract Variable, Extract Method and Rename Module. It also supports extensions that implement additional refactoring features such as Sort Imports.
 
@@ -203,7 +238,7 @@ def process_circle_data(radius_input):
 ```python
 from circle_lib import process_circle_data
 
-area, circumference = process_cicle_data(10)
+area, circumference = process_circle_data(10)
 ```
 
 
@@ -211,15 +246,7 @@ After a Python file/module is renamed, Pylance can find all instances that may n
 
 To customize which references need to be updated, you can toggle the checkboxes at the line or from the file level in `Refactor Preview`. Once you've made your selections, you can select `Apply Refactoring` or `Discard Refactoring`.
 
-<!-- ##### 1. Linting example 
-- **Step 1:** Create a new file called `linting.py`
-- **Step 2:** Copy and paste the following into the file
-```python
-def greet(names):
-    for name in names
-    print "Hello, " + name + "!"
-
-``` -->
+##### Add video
 
 ## 5. Linting
 
@@ -247,6 +274,7 @@ def process_circle_data(radius_input):
     print(f"Circumference: {circumference}")
 
 ```
+
 ##### Add video
 
 
@@ -283,6 +311,8 @@ plt.show()
 
 
 ### Python Debugging
+
+VSCode's integrated debugging support allows developers to launch or attach to their running apps and debug with breakpoints, call stacks, and an interactive console. These capabilities make it an invaluable tool for developers seeking to quickly identify the root causes of issues without leaving their coding environment.
 
 If you're only interested in debugging a Python script, the simplest way is to select the down-arrow next to the run button on the editor and select `Python Debugger: Debug Python File`.
 
@@ -322,12 +352,17 @@ plt.show()
 
 ```
 
+#### Using the Debugger
+
+##### Add video
+
+
+#### Using Breakpoints in Debugging
 
 ##### Add video
 
 
 ## 6. Customizing Shortcut Keys in VSCode
-
 
 Visual Studio Code (VSCode) is a highly customizable editor, allowing you to tailor its functionality to suit your workflow. One common customization is changing shortcut keys. In this tutorial, we'll walk through how to change the shortcut for the "Comment All" action to `Ctrl+1`.
 
@@ -360,6 +395,8 @@ Visual Studio Code (VSCode) is a highly customizable editor, allowing you to tai
 - Open any file in your editor, select multiple lines of code, and press `Ctrl+1`. The lines should now be commented out. Pressing `Ctrl+1` again will uncomment them.
 - If the shortcut doesn't work as expected, double-check the steps above to ensure everything was applied correctly.
 
+##### Video Here
+
 #### Additional Tips
 
 - **Customize Further**: Explore and customize other shortcuts in the same Keyboard Shortcuts menu to enhance your productivity.
@@ -370,7 +407,7 @@ Visual Studio Code (VSCode) is a highly customizable editor, allowing you to tai
 
 Jupyter (formerly IPython Notebook) is an open-source project that lets you easily combine Markdown text and executable Python source code on one canvas called a **notebook**. Visual Studio Code supports working with Jupyter Notebooks natively, as well as through Python code files.
 
-#### Create a jupyter notebook called `test.ipynb`
+#### Create a jupyter notebook called `plot.ipynb`
 
 
 **Starting code**
@@ -409,11 +446,13 @@ plt.show()
 
 ```
 
-
+##### Video Here
 
 ## 7. Github Integration: Using Source Control in VSCode
 
-Visual Studio Code (VSCode) integrates seamlessly with Git, allowing you to initialize repositories, make commits, and manage your code versions directly within the editor. Here's a concise guide on how to initialize a GitHub repository and create your first commit using VSCode's Source Control.
+VSCode integrates seamlessly with Git, allowing you to initialize repositories, make commits, and manage your code versions directly within the editor. Here's a concise guide on how to initialize a GitHub repository and create your first commit using VSCode's Source Control.
+
+### Initializing and Publishing on Github
 
 #### Step 1: Install Git
 
@@ -424,14 +463,28 @@ Ensure Git is installed on your system. You can download it from [git-scm.com](h
 - Launch VSCode.
 - Open the folder where your project is located or where you want to create a new project.
 
-#### Step 3: Initialize a Repository
+#### Step 3: Sign in to GitHub
+
+- If you want to push your repository to GitHub, sign in to your GitHub account through VSCode when prompted. 
+
+You need to install the **`GitHub Pull Requests`** extension if it's not already installed.
+
+#### Step 4: Configuring User Information
+
+- Open the terminal
+
+- Configure your name globally with the command: `git config --global user.name "Your Name"`
+
+- Configure your name globally with the command: `git config --global user.email "your_email@example.com"`
+
+- Verify Configuration with the command `git config --list`
+
+
+#### Step 4: Initialize a Repository
 
 - Open the Source Control panel by clicking on the Source Control icon in the Activity Bar on the side of the window, or press `Ctrl+Shift+G` (`Cmd+Shift+G` on macOS).
 - Click on `Initialize Repository`. If your folder is not yet a Git repository, VSCode will prompt you to initialize it. Confirm the action.
 
-#### Step 4: Sign in to GitHub
-
-- If you want to push your repository to GitHub, sign in to your GitHub account through VSCode when prompted. You might need to install the GitHub Pull Requests and Issues extension if it's not already installed.
 
 #### Step 5: Make Your First Commit
 
@@ -444,12 +497,36 @@ Ensure Git is installed on your system. You can download it from [git-scm.com](h
 - After committing your changes locally, click on the `...` button in the Source Control panel, go to `Remote`, and select `Publish to GitHub`.
 - Follow the prompts to create a new repository on GitHub and push your commit.
 
-#### Additional Tips
+##### Video Here
 
-- **Commit Regularly**: Make it a habit to commit your changes regularly. This helps in tracking your progress and makes it easier to revert to previous versions if needed.
-- **Use Branches**: For larger projects, work on different features using branches to keep your main codebase stable.
-- **Explore Extensions**: VSCode has a rich ecosystem of extensions for Git and GitHub that can enhance your version control experience, such as GitLens.
+### Cloning a Github repository
 
+Cloning a GitHub repository into Visual Studio Code (VSCode) allows you to work on projects from your local machine with ease. 
+
+#### Step 1: Find the repository to clone
+
+- Navigate to the Github page of the repository to be cloned
+- Click on the `Code` button and copy the URL provided.
+
+
+#### Step 2: Open Your Project in VSCode
+
+- Launch VSCode.
+- Open the explorer tab and press the `Clone Repository`
+
+#### Step 2: Find the repository to clone
+
+- Navigate to the Github page of the repository to be cloned
+- Click on the `Code` button and copy the URL provided.
+- Paste the URL in the dialogue provided.
+
+##### Video Here
+
+#### Extra Features
+
+- **Additional Information:** More information on git integration with vscode can be found here: `https://code.visualstudio.com/docs/sourcecontrol/overview`
+- **Branch management**
+- **Merge conflict manager**
 
 
 ## 7. Other useful extenstions
@@ -466,7 +543,7 @@ Ensure Git is installed on your system. You can download it from [git-scm.com](h
 
 #### AutoDoc example
 
-AutoDoc is a powerful extension for Visual Studio Code (VSCode) designed to streamline the documentation process for your code. By automatically generating docstrings for your functions and classes, AutoDoc helps maintain clear and consistent documentation, improving readability and maintainability.
+**`AutoDoc`** is a powerful extension for Visual Studio Code (VSCode) designed to streamline the documentation process for your code. By automatically generating docstrings for your functions and classes, AutoDoc helps maintain clear and consistent documentation, improving readability and maintainability.
 
 **Starting Code**
 ```python
@@ -490,6 +567,6 @@ def merge_and_analyze_lists(primary_list, secondary_list, sort=True, reverse=Fal
         'first_element': first_element,
         'last_element': last_element
     }
-
-
 ```
+
+##### Video Here
