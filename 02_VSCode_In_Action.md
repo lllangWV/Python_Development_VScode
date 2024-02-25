@@ -110,8 +110,7 @@ In this section, We be going over some editing features.
 ### Autocomplete and IntelliSense
 IntelliSense is a general term for code editing features that relate to code completion. When print is typed, notice how IntelliSense populates auto-completion options. The user is also given a list of options when they begin to type the variable named greeting. 
 
-##### Add video of auto Complete 
-
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/b095e5c8-13db-4de9-b80d-fe1eb8733688
 
 Autocomplete and IntelliSense are provided for all files within the current working folder. They're also available for Python packages that are installed in standard locations.
 
