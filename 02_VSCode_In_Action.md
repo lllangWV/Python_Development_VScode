@@ -118,7 +118,8 @@ Autocomplete and IntelliSense are provided for all files within the current work
 
 Pylance offers auto import suggestions for modules in your workspace and/or packages you have installed in your environment. This enables import statements to be automatically added as you type. Auto imports are disabled by default, but you can enable them by setting `python.analysis.autoImportCompletions` to `true` in your settings.
 
-##### Add video of auto import
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/2e203a60-31f6-4050-b3f5-238c66692a39
+
 The settings can be found in `File->Preferences->Settings`. Once the settings tab is open, use the search base to fine the above setting.
 
 ### Navigation
@@ -133,7 +134,7 @@ While editing, you can right-click different identifiers to take advantage of se
 
 - **Peek Declaration** is similar, but displays the declaration directly in the editor. Again, use `Escape` or the **x** in the upper right corner to close the Peek window
 
-##### Add video of go to definition
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/75057ef5-035a-47b3-9650-efe53204385c
 
 **Starting code**
 ```python
@@ -175,7 +176,7 @@ The Python extension adds the following refactoring functionalities: Extract Var
 
 - **Extract Variable**  Extracts all similar occurrences of the selected text within the current scope, and replaces it with a new variable. You can invoke this command by selecting the line of code you wish to extract as a variable. Then select the light-bulb or right click and select refactor.
 
-##### Add video
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/24cb6ca6-4ae7-4bc5-ab0d-5dd76fc3b156
 
 **Starting code**
 ```python
@@ -185,7 +186,7 @@ def price_after_tax(price):
 
 - **Extract Method**  Extracts all similar occurrences of the selected text within the current scope, and replaces it with a new variable.You can invoke this command by selecting the line of code you wish to extract as a variable. Then select the light-bulb or right click and select refactor.
 
-##### Add video
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/2c4fa26e-aabe-4c0f-8136-de0ec6a09a2d
 
 **Starting code**
 ```python
@@ -209,8 +210,6 @@ def process_circle_data(radius_input):
 ```
 
 - **Rename Module**  Extracts all similar occurrences of the selected text within the current scope, and replaces it with a new variable. You can invoke this command by selecting the line of code you wish to extract as a variable. Then select the light-bulb or right click and select refactor.
-
-##### Add video
 
 **Create file called `circle_lib.py`**
 ```python
@@ -246,7 +245,7 @@ After a Python file/module is renamed, Pylance can find all instances that may n
 
 To customize which references need to be updated, you can toggle the checkboxes at the line or from the file level in `Refactor Preview`. Once you've made your selections, you can select `Apply Refactoring` or `Discard Refactoring`.
 
-##### Add video
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/bec06ef9-866c-41d1-9d07-f3447cfbd8c9
 
 ## 5. Linting
 
@@ -275,9 +274,7 @@ def process_circle_data(radius_input):
 
 ```
 
-##### Add video
-
-
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/9c48382c-de31-4812-acc9-a0a26f582f03
 
 ## 6. Formating
 
@@ -303,12 +300,9 @@ plt.title("Sine Wave")
 plt.xlabel("X")
 plt.ylabel("Y")
 plt.show()
-
-
 ```
 
-##### Add video
-
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/d3221ff6-f297-42ae-b764-42abe4d6bf9b
 
 ### Python Debugging
 
@@ -354,13 +348,11 @@ plt.show()
 
 #### Using the Debugger
 
-##### Add video
-
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/6cf6d3a4-8326-4eee-a648-da45ad118f8d
 
 #### Using Breakpoints in Debugging
 
-##### Add video
-
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/c4819970-4cf3-43c3-9c45-687c54c9a88f
 
 ## 6. Customizing Shortcut Keys in VSCode
 
@@ -395,7 +387,7 @@ Visual Studio Code (VSCode) is a highly customizable editor, allowing you to tai
 - Open any file in your editor, select multiple lines of code, and press `Ctrl+1`. The lines should now be commented out. Pressing `Ctrl+1` again will uncomment them.
 - If the shortcut doesn't work as expected, double-check the steps above to ensure everything was applied correctly.
 
-##### Video Here
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/21775937-dd3d-4748-b366-1d9ba7c441d3
 
 #### Additional Tips
 
@@ -445,8 +437,7 @@ plt.legend()
 plt.show()
 
 ```
-
-##### Video Here
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/da2f03de-e049-4c6b-b2ac-10c942cbe8c2
 
 ## 7. Github Integration: Using Source Control in VSCode
 
@@ -497,7 +488,7 @@ You need to install the **`GitHub Pull Requests`** extension if it's not already
 - After committing your changes locally, click on the `...` button in the Source Control panel, go to `Remote`, and select `Publish to GitHub`.
 - Follow the prompts to create a new repository on GitHub and push your commit.
 
-##### Video Here
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/96b55ed8-d8fa-4d8a-874f-92bc8e9c777f
 
 ### Cloning a Github repository
 
@@ -520,7 +511,7 @@ Cloning a GitHub repository into Visual Studio Code (VSCode) allows you to work 
 - Click on the `Code` button and copy the URL provided.
 - Paste the URL in the dialogue provided.
 
-##### Video Here
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/5b295f81-992b-4384-b6db-7db83242dfb1
 
 #### Extra Features
 
@@ -569,4 +560,5 @@ def merge_and_analyze_lists(primary_list, secondary_list, sort=True, reverse=Fal
     }
 ```
 
-##### Video Here
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/914cc58b-704a-4eb3-888a-509370514618
+
