@@ -50,8 +50,6 @@ sudo apt-get install git
 ```
 
 
-```
-
 ## Verify Installation
 
 Regardless of your operating system, you can verify the installation by opening a terminal (or Command Prompt on Windows) and running:

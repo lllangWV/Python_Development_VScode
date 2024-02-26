@@ -7,7 +7,7 @@ We will be going over a demonstration of a Python Project in VScode. To start, l
 - **Step 2:** Go to `File` > `Add Folder to Workspace...` and create a new folder named `vscode_demo`.
 - **Step 3:** Open the new folder in VS Code to start your project.
 
-## 1.Installing Python Extensions
+## 1. Setup: Installing Python Extensions
 
 To effectively interface Python with Visual Studio Code (VS Code), installing certain extensions is essential. These extensions enhance the development experience by providing advanced coding support, debugging capabilities, code formatting, and more. Below is a list of recommended extensions for Python development in VS Code:
 
@@ -97,9 +97,9 @@ For python environments, we must activate them and install the necessary package
   <img src="/images/virtual_environment_activate.PNG" alt="Selecting default interpreter 2" style="width: 100%;"/>
 </p>
 
-### Final Thoughts
+>> **Note**: Conda environments will also automatically be detected
 
-- Conda environments will also automatically be detected
+
 
 
 ## 4. Editing Code
@@ -114,7 +114,7 @@ https://github.com/lllangWV/Python_Development_VScode/assets/120115419/b095e5c8-
 
 Autocomplete and IntelliSense are provided for all files within the current working folder. They're also available for Python packages that are installed in standard locations.
 
-### Enable Auto Imports
+### Auto Imports
 
 Pylance offers auto import suggestions for modules in your workspace and/or packages you have installed in your environment. This enables import statements to be automatically added as you type. Auto imports are disabled by default, but you can enable them by setting `python.analysis.autoImportCompletions` to `true` in your settings.
 
@@ -358,7 +358,7 @@ https://github.com/lllangWV/Python_Development_VScode/assets/120115419/c4819970-
 
 Visual Studio Code (VSCode) is a highly customizable editor, allowing you to tailor its functionality to suit your workflow. One common customization is changing shortcut keys. In this tutorial, we'll walk through how to change the shortcut for the "Comment All" action to `Ctrl+1`.
 
-#### Step 1: Open Keyboard Shortcuts
+### Step 1: Open Keyboard Shortcuts
 
 - **Method 1: Using the Command Palette**
   - Press `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS) to open the Command Palette.
@@ -367,22 +367,22 @@ Visual Studio Code (VSCode) is a highly customizable editor, allowing you to tai
 - **Method 2: Using the Menu**
   - Go to `File` > `Preferences` > `Keyboard Shortcuts`. On macOS, it's `Code` > `Preferences` > `Keyboard Shortcuts`.
 
-#### Step 2: Search for the Comment Command
+### Step 2: Search for the Comment Command
 
 - In the Keyboard Shortcuts interface, there's a search bar at the top. Type `comment` to filter out the relevant commands. You're looking for something along the lines of `Toggle Line Comment` or `Add Line Comment` and `Remove Line Comment`, depending on how VSCode phrases it in your version. These commands typically use `Ctrl+/` (Windows/Linux) or `Cmd+/` (macOS) by default.
 
-#### Step 3: Change the Shortcut
+### Step 3: Change the Shortcut
 
 - Once you've found the toggle comment command, click on the pencil icon next to it to edit.
 - Press `Ctrl+1` (or `Cmd+1` on macOS) when prompted to enter the new keybinding. VSCode will then show `Ctrl+1` in the input field.
 - Press `Enter` to save the new keybinding.
 
-#### Step 4: Resolve Conflicts
+### Step 4: Resolve Conflicts
 
 - If `Ctrl+1` is already assigned to another command, VSCode will alert you to the conflict. You must decide whether to proceed (overriding the existing command) or choose a different combination.
 - If you choose to override, the previous command assigned to `Ctrl+1` will no longer have that shortcut.
 
-#### Step 5: Testing
+### Step 5: Testing
 
 - Open any file in your editor, select multiple lines of code, and press `Ctrl+1`. The lines should now be commented out. Pressing `Ctrl+1` again will uncomment them.
 - If the shortcut doesn't work as expected, double-check the steps above to ensure everything was applied correctly.
@@ -399,7 +399,7 @@ https://github.com/lllangWV/Python_Development_VScode/assets/120115419/21775937-
 
 Jupyter (formerly IPython Notebook) is an open-source project that lets you easily combine Markdown text and executable Python source code on one canvas called a **notebook**. Visual Studio Code supports working with Jupyter Notebooks natively, as well as through Python code files.
 
-#### Create a jupyter notebook called `plot.ipynb`
+### Create a jupyter notebook called `plot.ipynb`
 
 
 **Starting code**
@@ -439,85 +439,6 @@ plt.show()
 ```
 https://github.com/lllangWV/Python_Development_VScode/assets/120115419/da2f03de-e049-4c6b-b2ac-10c942cbe8c2
 
-## 7. Github Integration: Using Source Control in VSCode
-
-VSCode integrates seamlessly with Git, allowing you to initialize repositories, make commits, and manage your code versions directly within the editor. Here's a concise guide on how to initialize a GitHub repository and create your first commit using VSCode's Source Control.
-
-### Initializing and Publishing on Github
-
-#### Step 1: Install Git
-
-Ensure Git is installed on your system. You can download it from [git-scm.com](https://git-scm.com/) and follow the installation instructions for your operating system.
-
-#### Step 2: Open Your Project in VSCode
-
-- Launch VSCode.
-- Open the folder where your project is located or where you want to create a new project.
-
-#### Step 3: Sign in to GitHub
-
-- If you want to push your repository to GitHub, sign in to your GitHub account through VSCode when prompted. 
-
-You need to install the **`GitHub Pull Requests`** extension if it's not already installed.
-
-#### Step 4: Configuring User Information
-
-- Open the terminal
-
-- Configure your name globally with the command: `git config --global user.name "Your Name"`
-
-- Configure your name globally with the command: `git config --global user.email "your_email@example.com"`
-
-- Verify Configuration with the command `git config --list`
-
-
-#### Step 4: Initialize a Repository
-
-- Open the Source Control panel by clicking on the Source Control icon in the Activity Bar on the side of the window, or press `Ctrl+Shift+G` (`Cmd+Shift+G` on macOS).
-- Click on `Initialize Repository`. If your folder is not yet a Git repository, VSCode will prompt you to initialize it. Confirm the action.
-
-
-#### Step 5: Make Your First Commit
-
-- After initializing, any file changes will appear in the Source Control panel. Stage your changes by clicking the `+` icon next to each file or right-click and select `Stage Changes`.
-- Enter a commit message in the input box at the top of the Source Control panel.
-- Press `Ctrl+Enter` (`Cmd+Enter` on macOS) to commit the staged changes.
-
-#### Step 6: Publish to GitHub
-
-- After committing your changes locally, click on the `...` button in the Source Control panel, go to `Remote`, and select `Publish to GitHub`.
-- Follow the prompts to create a new repository on GitHub and push your commit.
-
-https://github.com/lllangWV/Python_Development_VScode/assets/120115419/96b55ed8-d8fa-4d8a-874f-92bc8e9c777f
-
-### Cloning a Github repository
-
-Cloning a GitHub repository into Visual Studio Code (VSCode) allows you to work on projects from your local machine with ease. 
-
-#### Step 1: Find the repository to clone
-
-- Navigate to the Github page of the repository to be cloned
-- Click on the `Code` button and copy the URL provided.
-
-
-#### Step 2: Open Your Project in VSCode
-
-- Launch VSCode.
-- Open the explorer tab and press the `Clone Repository`
-
-#### Step 2: Find the repository to clone
-
-- Navigate to the Github page of the repository to be cloned
-- Click on the `Code` button and copy the URL provided.
-- Paste the URL in the dialogue provided.
-
-https://github.com/lllangWV/Python_Development_VScode/assets/120115419/5b295f81-992b-4384-b6db-7db83242dfb1
-
-#### Extra Features
-
-- **Additional Information:** More information on git integration with vscode can be found here: `https://code.visualstudio.com/docs/sourcecontrol/overview`
-- **Branch management**
-- **Merge conflict manager**
 
 
 ## 7. Other useful extenstions
@@ -532,7 +453,7 @@ https://github.com/lllangWV/Python_Development_VScode/assets/120115419/5b295f81-
 - **vscode-pdf**: View PDF files directly in VS Code.
 
 
-#### AutoDoc example
+### AutoDoc example
 
 **`AutoDoc`** is a powerful extension for Visual Studio Code (VSCode) designed to streamline the documentation process for your code. By automatically generating docstrings for your functions and classes, AutoDoc helps maintain clear and consistent documentation, improving readability and maintainability.
 
