@@ -1,5 +1,5 @@
 
-# Project in VS Code
+# Python Integration
 
 We will be going over a demonstration of a Python Project in VScode. To start, lets create a new folder and open it in VS Code
 
