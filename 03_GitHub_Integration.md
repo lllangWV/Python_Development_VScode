@@ -101,7 +101,7 @@ Creating a new branch in your repository allows you to work on new features or f
 - To switch back, in the lower left corner, click the on the button `feature`
 - A dialogue box should pop up. Click `master`
 
-*Insert a placeholder for an image showing the branch creation process*
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/699fb219-5072-4c6e-89fa-29448e4cdb84
 
 ## Extra: Merging a Feature Branch into the Main Branch
 
