@@ -103,7 +103,7 @@ Creating a new branch in your repository allows you to work on new features or f
 
 *Insert a placeholder for an image showing the branch creation process*
 
-## Merging a Feature Branch into the Main Branch
+## Extra: Merging a Feature Branch into the Main Branch
 
 Merging a feature branch into the main branch is a crucial step in collaborative development, allowing you to integrate new features or changes into the primary codebase. This section demonstrates how to perform this merge in Visual Studio Code (VSCode) and how to utilize the 3-way merge editor to resolve any conflicts that arise.
 
