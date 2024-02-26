@@ -54,4 +54,14 @@ After configuring your SSH connections:
 4. Once you are connecting, you can open any folder on the explorer. You may need to go through the login process again.
 5. You can connect to multiple login node by opening new terminals.
 
+**Connecting to Remote**
+
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/1b5de76a-456f-46fd-a57e-c6043dcd69f3
+
+**Opening Remote Directory in Explorer**
+
+https://github.com/lllangWV/Python_Development_VScode/assets/120115419/a057225f-e308-4bd1-a014-fb55d67c3433
+
+
+
 By following these steps, you can efficiently connect to remote HPC systems through SSH directly from VS Code, leveraging the Remote - SSH extension for seamless remote development. This setup allows you to edit files, run commands, and interact with your remote environment as if you were working locally, providing a powerful tool for developers who need to work with remote systems.
