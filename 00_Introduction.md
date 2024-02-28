@@ -109,7 +109,8 @@ While our focus today is on Python, it's worth mentioning that VS Code is a poly
 
 Throughout this webinar, we will:
 
-- Showcase VS Code's features in the context of Python development.
-- Demonstrate how to leverage the IDE's lightweight design and powerful extensions to enhance your coding efficiency.
-- Explore built-in tools like Git integration, the debugger, and the integrated terminal, and how they can streamline your development process.
-- Provide tips on customizing VS Code to fit your development style, making Python coding more productive and enjoyable.
+- Gain a solid understanding of VSCode's interface and features.
+- Learn how to integrate Python effectively within VSCode for development projects.
+- Explore how to leverage VSCode's GitHub integration for source control management.
+- Discover how AI tools, including GitHub Copilot, can enhance coding efficiency.
+- Understand how to set up and manage remote connections directly within VSCode for distributed development.
