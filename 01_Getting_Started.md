@@ -67,6 +67,6 @@ Enhance your VS Code experience with Extensions. Whether you need support for a 
 
 The Integrated Terminal in VS Code allows you to run shell commands directly within the IDE, making it convenient to execute scripts, manage version control, and interact with your environment.
 
-- **To open the Integrated Terminal,** use the shortcut Ctrl + $`$ or navigate to `View -> Terminal` from the top menu.
+- **To open the Integrated Terminal,** use the shortcut Ctrl + \` or navigate to `View -> Terminal` from the top menu.
 
 ![Alt text](/images/vscode_terminal.PNG)
