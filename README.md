@@ -1,4 +1,4 @@
-# VSCode IDE Demonstation
+# VSCode IDE Demonstration
 
 Welcome to the official GitHub repository for our edemonstration focused on Visual Studio Code (VSCode) IDE and exploring its diverse features. This demonstration is crafted to guide participants through the various capabilities of VSCode, enhancing both their efficiency and productivity. From beginners to seasoned developers, this webinar caters to a broad audience, offering insights into the versatile world of VSCode.
 
